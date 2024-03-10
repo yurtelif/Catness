@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.yrtelf.catness"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.yrtelf.catness"
@@ -41,7 +41,6 @@ dependencies {
 
     // Koin Android features
     implementation("io.insert-koin:koin-android:3.2.0")
-    implementation("io.insert-koin:koin-androidx-viewmodel:3.2.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
