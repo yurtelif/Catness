@@ -1,4 +1,10 @@
 package com.yrtelf.catness.data
 
-class CatService {
+import retrofit2.http.GET
+
+interface CatService {
+
+    @GET("/facts")
+    suspend fun getFacts(): List<Fact>
+
 }

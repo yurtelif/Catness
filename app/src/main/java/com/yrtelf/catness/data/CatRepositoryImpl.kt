@@ -2,8 +2,8 @@ package com.yrtelf.catness.data
 
 class CatRepositoryImpl(private val catService: CatService): CatRepository {
 
-    override fun getCatFacts() {
-        TODO("Not yet implemented")
+    override suspend fun getCatFacts(): List<Fact> {
+        return catService.getFacts()
     }
 
 }
